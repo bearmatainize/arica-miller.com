@@ -1,0 +1,51 @@
+
+nav a {
+	padding: 10px;
+	list-style:none;
+	text-decoration:none;
+	color:black;
+}
+
+div {
+	padding:10px;
+}
+
+img {
+	border-radius:50% 50% 50% 50% / 50% 50% 50% 50%;
+}
+/*Grid Stuff I guess*/
+
+.container {
+	/*margin:auto;
+	width:85%;
+	max-width:1000px;*/
+	display:grid;
+	grid-template-columns:1fr .4fr .6fr 1fr;
+}
+
+nav {
+	margin:0;
+	grid-column:4/5;
+}
+
+header {
+	grid-column:1/2;
+}
+
+.box-me {
+	grid-column:2/3;
+	grid-row:2/4;
+}
+
+.introduction {
+	grid-column:3/4;
+}
+
+.intro-paragraph {
+	grid-column:3/4;
+}
+
+footer {
+	grid-column:4/5;
+	grid-row:4/5;
+}
