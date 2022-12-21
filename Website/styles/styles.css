@@ -1,4 +1,10 @@
 
+* {
+	border: solid rgba(255, 0, 0, 0) 2px;
+	font-family: Poppins, Arial, sans-serif;
+	font-weight: 300;
+}
+
 nav a {
 	padding: 10px;
 	list-style:none;
@@ -8,6 +14,15 @@ nav a {
 
 div {
 	padding:10px;
+}
+
+h1 {
+	font-size: 80px;
+	font-weight: 700;
+}
+
+h2 {
+	font-weight: bold;
 }
 
 img {
@@ -21,31 +36,69 @@ img {
 	max-width:1000px;*/
 	display:grid;
 	grid-template-columns:1fr .4fr .6fr 1fr;
+	gap: 20px;
 }
 
 nav {
-	margin:0;
-	grid-column:4/5;
+	margin:auto;
+	margin-left: 60vw;
+	display: inline;
 }
 
 header {
-	grid-column:1/2;
+	grid-column: 1/5;
+	grid-row: 1/2;
+	background-color: white;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	left: 0;
+}
+
+#topname {
+	display: inline-block;
+}
+
+.title {
+	display: inline-block;
 }
 
 .box-me {
 	grid-column:2/3;
 	grid-row:2/4;
+	padding:50px;
+	background-color: #f4ece6;
+	box-shadow: #99928d -5px 5px 5px;
+	position: relative;
+	top: 100px;
 }
 
 .introduction {
 	grid-column:3/4;
+	grid-row:2/3;
+	position: relative;
+	top: 100px;
 }
 
 .intro-paragraph {
 	grid-column:3/4;
+	grid-row:3/4;
+	position: relative;
+	top: 100px;
 }
 
 footer {
 	grid-column:4/5;
 	grid-row:4/5;
+}
+
+body {
+	height: 100vh;
+	background: linear-gradient(
+		to right,
+		#e6dace 0%,
+		#e6dace 45%,
+		#ffffff 4%,
+		#ffffff 100%
+	);
 }
