@@ -12,6 +12,10 @@ nav a {
 	color:black;
 }
 
+#current-page {
+	color: #0050ff;
+}
+
 div {
 	padding:10px;
 }
@@ -19,16 +23,49 @@ div {
 h1 {
 	font-size: 80px;
 	font-weight: 700;
+	margin-bottom: 10px;
+	margin-top: 30px;
 }
 
 h2 {
 	font-weight: bold;
 }
 
+h3 {
+	margin-bottom: 50px;
+}
+
+strong {
+	font-weight: bold;
+}
+
 img {
 	border-radius:50% 50% 50% 50% / 50% 50% 50% 50%;
 }
-/*Grid Stuff I guess*/
+
+#resume-button {
+	background-color: #0050ff;
+	color: white;
+	border-radius: 20px;
+	padding: 10px 30px;
+	text-decoration: none;
+	margin: auto;
+	font-weight: bold;
+}
+
+#projects-button {
+	background-color: white;
+	border: 2px solid black;
+	border-radius: 20px;
+	padding: 10px 30px;
+	text-decoration: none;
+	margin: auto;
+	font-weight: bold;
+}
+
+a:visited {
+	color: black;
+}
 
 .container {
 	/*margin:auto;
@@ -73,6 +110,23 @@ header {
 	top: 100px;
 }
 
+.box-project {
+	grid-column:1/5;
+	grid-row:2/4;
+	padding:50px;
+	background-color: #f4ece6;
+	box-shadow: #99928d -5px 5px 5px;
+	position: relative;
+	top: 100px;
+	text-align: center;
+}
+
+#WIP {
+	grid-row:5/6;
+	margin-top: 100px;
+	margin-left: 75%;
+}
+
 .introduction {
 	grid-column:3/4;
 	grid-row:2/3;
@@ -88,11 +142,24 @@ header {
 }
 
 footer {
-	grid-column:4/5;
-	grid-row:4/5;
+	/*grid-column:4/5;
+	grid-row:5/6;*/
+	position: absolute;
+	bottom: 10px;
+	right: 0;
+}
+
+td {
+	text-align: center;
+	padding: 0 20px;
+}
+
+tr {
+	text-align: center;
 }
 
 body {
+	overflow: hidden;
 	height: 100vh;
 	background: linear-gradient(
 		to right,
