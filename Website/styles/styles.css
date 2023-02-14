@@ -12,6 +12,16 @@ nav a {
 	color:black;
 }
 
+nav {
+    display: inline-flex;
+    gap: 10px;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    float: right;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
 #current-page {
 	color: #0050ff;
 }
@@ -76,11 +86,11 @@ a:visited {
 	gap: 20px;
 }
 
-nav {
+/*nav {
 	margin:auto;
 	margin-left: 60vw;
 	display: inline;
-}
+}*/
 
 header {
 	grid-column: 1/5;
@@ -127,6 +137,11 @@ header {
 	margin-left: 75%;
 }
 
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
 .introduction {
 	grid-column:3/4;
 	grid-row:2/3;
@@ -169,3 +184,10 @@ body {
 		#ffffff 100%
 	);
 }
+
+/*@media (max-width:1650px) {
+    #projects-button {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}*/
