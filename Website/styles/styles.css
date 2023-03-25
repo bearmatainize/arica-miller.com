@@ -1,7 +1,68 @@
+/*
+*****************************
+|	    GENERIC STYLES       |
+*****************************
+*/
 
 * {
 	font-family: Poppins, Arial, sans-serif;
 	font-weight: 300;
+}
+
+body {
+	height: 100vh;
+	background: #e6dace;
+}
+
+h1 {
+	font-size: 80px;
+	font-weight: 700;
+	margin-bottom: 10px;
+	margin-top: 30px;
+}
+
+h2 {
+	font-weight: bold;
+}
+
+div {
+	padding:10px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+span {
+	font-size: 18px;
+}
+
+a:visited {
+	color: black;
+}
+
+/*
+*****************************
+|	    HEADER STYLES       |
+*****************************
+*/
+
+header {
+	background-color: white;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	left: 0;
+}
+
+
+.title {
+	display: inline-block;
+}
+
+
+#topname {
+	display: inline-block;
 }
 
 nav a {
@@ -25,23 +86,51 @@ nav {
 	color: #0050ff;
 }
 
-div {
-	padding:10px;
+/*
+*****************************
+|  ABOUT ME CONTENT STYLES  |
+*****************************
+*/
+
+#about-body {
+	overflow: auto;
+	height: 97vh;
+	background: linear-gradient(
+		to right,
+		#e6dace 0%,
+		#e6dace 45%,
+		#ffffff 4%,
+		#ffffff 100%
+	);
+	display: flex;
+	flex-direction: column;
 }
 
-h1 {
-	font-size: 80px;
-	font-weight: 700;
-	margin-bottom: 10px;
-	margin-top: 30px;
+.container {
+	flex: 1 0 auto;
+	max-width: 95%;
+	margin: auto;
+	margin-top: 106px;
+	overflow: auto;
 }
 
-h2 {
-	font-weight: bold;
+.main-content {
+	display: flex;
+	max-width: 50%;
+	justify-content: center;
+	margin: auto;
+	margin-bottom: 5vh;
+	margin-top: 5vh;
+	padding-left: 8vw;
+	padding-top: 4vh;
+	gap: 20px;
 }
 
-strong {
-	font-weight: bold;
+.box-me {
+	padding:50px;
+	background-color: #f4ece6;
+	box-shadow: #99928d -5px 5px 5px;
+	top: 100px;
 }
 
 #image-me {
@@ -68,85 +157,48 @@ strong {
 	font-weight: bold;
 }
 
-a:visited {
-	color: black;
-}
-
-.project-description a:visited {
-	color: #0000EE;
-}
-
-.container {
-	flex: 1 0 auto;
-	max-width: 90%;
-	margin: auto;
-	margin-top: 106px;
-}
-
-header {
-	background-color: white;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	left: 0;
-	z-index: 1;
-}
-
-#topname {
-	display: inline-block;
-}
-
-.title {
-	display: inline-block;
-}
-
-.main-content {
-	display: flex;
-	max-width: 50%;
-	justify-content: center;
-	margin: auto;
-	margin-bottom: 5vh;
-	margin-top: 5vh;
-	padding-left: 8vw;
-	padding-top: 4vh;
-	gap: 20px;
-}
-
-.box-me {
-	padding:50px;
-	background-color: #f4ece6;
-	box-shadow: #99928d -5px 5px 5px;
-	top: 100px;
-}
-
-
-span {
-	font-size: 18px;
-}
-
-.box-project {
-	width: 80%;
-	margin: auto;
-	background-color: #f4ece6;
-	box-shadow: #99928d -5px 5px 5px;
-	position: relative;
-	margin-top: 50px;
-	text-align: left;
-}
-
 .intro-paragraph {
 	margin-top: 3vh;
 	margin-right: 8vw;
 }
 
-#box-projects-title {
-	position: relative;
-	top: 100px;
-	text-align: center;
-	margin-bottom: 40px;
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+#resume-button {
+	margin: 2px 5px;
+}
+
+#projects-button {
+	margin: 2px 5px;
+}
+
+
+/*
+*****************************
+|	   PROJECTS STYLES      |
+*****************************
+*/
+
+.project-description a:visited {
+	color: #0000EE;
+}
+
+.box-project {
+	width: 80%;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background-color: #f4ece6;
+	box-shadow: #99928d -5px 5px 5px;
+	overflow: auto;
 }
 
 #projects {
+	text-align: center;
+	margin-bottom: 40px;
 	font-size: 40px;
 }
 
@@ -167,22 +219,15 @@ span {
 	text-align: center;
 }
 
-.buttons {
-    display: flex;
-    gap: 10px;
-}
-
-#resume-button {
-	margin: 2px 5px;
-}
-
-#projects-button {
-	margin: 2px 5px;
-}
+/*
+*****************************
+|	    FOOTER STYLES       |
+*****************************
+*/
 
 footer {
 	flex-shrink: 0;
-	margin-bottom: 10;
+	margin-bottom: 20px;
 }
 
 .footer-table {
@@ -197,23 +242,4 @@ td {
 
 tr {
 	text-align: center;
-}
-
-#about-body {
-	overflow: auto;
-	height: 97vh;
-	background: linear-gradient(
-		to right,
-		#e6dace 0%,
-		#e6dace 45%,
-		#ffffff 4%,
-		#ffffff 100%
-	);
-	display: flex;
-	flex-direction: column;
-}
-
-body {
-	height: 100vh;
-	background: #e6dace;
 }
