@@ -1,15 +1,14 @@
 
 * {
-	border: solid rgba(255, 0, 0, 0) 2px;
 	font-family: Poppins, Arial, sans-serif;
 	font-weight: 300;
 }
 
 nav a {
 	padding: 10px;
-	list-style:none;
-	text-decoration:none;
-	color:black;
+	list-style: none;
+	text-decoration: none;
+	color: black;
 }
 
 nav {
@@ -78,14 +77,13 @@ a:visited {
 }
 
 .container {
-	display: grid;
-	grid-template-columns: 1fr .4fr .6fr 1fr;
-	gap: 20px;
+	flex: 1 0 auto;
+	max-width: 90%;
+	margin: auto;
+	margin-top: 106px;
 }
 
 header {
-	grid-column: 1/5;
-	grid-row: 1/2;
 	background-color: white;
 	position: fixed;
 	top: 0;
@@ -102,22 +100,31 @@ header {
 	display: inline-block;
 }
 
+.main-content {
+	display: flex;
+	max-width: 50%;
+	justify-content: center;
+	margin: auto;
+	margin-bottom: 5vh;
+	margin-top: 5vh;
+	padding-left: 8vw;
+	padding-top: 4vh;
+	gap: 20px;
+}
+
 .box-me {
-	grid-column:2/3;
-	grid-row:2/4;
 	padding:50px;
 	background-color: #f4ece6;
 	box-shadow: #99928d -5px 5px 5px;
-	position: relative;
 	top: 100px;
 }
+
 
 span {
 	font-size: 18px;
 }
 
 .box-project {
-	grid-column:1/5;
 	width: 80%;
 	margin: auto;
 	background-color: #f4ece6;
@@ -127,8 +134,12 @@ span {
 	text-align: left;
 }
 
+.intro-paragraph {
+	margin-top: 3vh;
+	margin-right: 8vw;
+}
+
 #box-projects-title {
-	grid-column:1/5;
 	position: relative;
 	top: 100px;
 	text-align: center;
@@ -158,26 +169,20 @@ span {
 
 .buttons {
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 
-.introduction {
-	grid-column:3/4;
-	grid-row:2/3;
-	position: relative;
-	top: 100px;
+#resume-button {
+	margin: 2px 5px;
 }
 
-.intro-paragraph {
-	grid-column:3/4;
-	grid-row:3/4;
-	position: relative;
-	top: 100px;
+#projects-button {
+	margin: 2px 5px;
 }
 
 footer {
-	position: relative;
-	grid-column: 4/5;
+	flex-shrink: 0;
+	margin-bottom: 10;
 }
 
 .footer-table {
@@ -195,8 +200,8 @@ tr {
 }
 
 #about-body {
-	overflow: hidden;
-	min-height: 100vh;
+	overflow: auto;
+	height: 97vh;
 	background: linear-gradient(
 		to right,
 		#e6dace 0%,
@@ -204,9 +209,11 @@ tr {
 		#ffffff 4%,
 		#ffffff 100%
 	);
+	display: flex;
+	flex-direction: column;
 }
 
 body {
-	min-height: 100vh;
+	height: 100vh;
 	background: #e6dace;
 }
