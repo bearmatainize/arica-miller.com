@@ -10,7 +10,7 @@
 }
 
 body {
-	height: 100vh;
+	height: 100%;
 	background: #e6dace;
 }
 
@@ -94,7 +94,7 @@ nav {
 
 #about-body {
 	overflow: auto;
-	height: 97vh;
+	height: 97%;
 	background: linear-gradient(
 		to right,
 		#e6dace 0%,
@@ -110,7 +110,8 @@ nav {
 	flex: 1 0 auto;
 	max-width: 95%;
 	margin: auto;
-	margin-top: 106px;
+	margin-top: 100px;
+	margin-bottom: 100px;
 	overflow: auto;
 }
 
@@ -119,10 +120,9 @@ nav {
 	max-width: 50%;
 	justify-content: center;
 	margin: auto;
-	margin-bottom: 5vh;
-	margin-top: 5vh;
-	padding-left: 8vw;
-	padding-top: 4vh;
+	margin-bottom: 5%;
+	margin-top: 5%;
+	padding-left: 10%;
 	gap: 20px;
 }
 
@@ -130,7 +130,6 @@ nav {
 	padding:50px;
 	background-color: #f4ece6;
 	box-shadow: #99928d -5px 5px 5px;
-	top: 100px;
 }
 
 #image-me {
@@ -158,8 +157,8 @@ nav {
 }
 
 .intro-paragraph {
-	margin-top: 3vh;
-	margin-right: 8vw;
+	margin-top: 10%;
+	margin-right: 40%;
 }
 
 .buttons {
@@ -181,6 +180,21 @@ nav {
 |	   PROJECTS STYLES      |
 *****************************
 */
+
+.projects-container {
+	flex: 1 0 auto;
+	max-width: 95%;
+	margin: auto;
+	margin-top: 100px;
+	overflow: auto;
+}
+
+#projects-body {
+	overflow: auto;
+	height: 97%;
+	display: flex;
+	flex-direction: column;
+}
 
 .project-description a:visited {
 	color: #0000EE;
@@ -227,7 +241,6 @@ nav {
 
 footer {
 	flex-shrink: 0;
-	margin-bottom: 20px;
 }
 
 .footer-table {
