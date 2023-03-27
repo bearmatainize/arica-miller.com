@@ -1,15 +1,75 @@
+/*
+*****************************
+|	    GENERIC STYLES       |
+*****************************
+*/
 
 * {
-	border: solid rgba(255, 0, 0, 0) 2px;
 	font-family: Poppins, Arial, sans-serif;
 	font-weight: 300;
 }
 
+body {
+	height: 100%;
+	background: #e6dace;
+}
+
+h1 {
+	font-size: 80px;
+	font-weight: 700;
+	margin-bottom: 10px;
+	margin-top: 30px;
+}
+
+h2 {
+	font-weight: bold;
+}
+
+div {
+	padding:10px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+span {
+	font-size: 18px;
+}
+
+a:visited {
+	color: black;
+}
+
+/*
+*****************************
+|	    HEADER STYLES       |
+*****************************
+*/
+
+header {
+	background-color: white;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	left: 0;
+}
+
+
+.title {
+	display: inline-block;
+}
+
+
+#topname {
+	display: inline-block;
+}
+
 nav a {
 	padding: 10px;
-	list-style:none;
-	text-decoration:none;
-	color:black;
+	list-style: none;
+	text-decoration: none;
+	color: black;
 }
 
 nav {
@@ -26,23 +86,50 @@ nav {
 	color: #0050ff;
 }
 
-div {
-	padding:10px;
+/*
+*****************************
+|  ABOUT ME CONTENT STYLES  |
+*****************************
+*/
+
+#about-body {
+	overflow: auto;
+	height: 97%;
+	background: linear-gradient(
+		to right,
+		#e6dace 0%,
+		#e6dace 45%,
+		#ffffff 4%,
+		#ffffff 100%
+	);
+	display: flex;
+	flex-direction: column;
 }
 
-h1 {
-	font-size: 80px;
-	font-weight: 700;
-	margin-bottom: 10px;
-	margin-top: 30px;
+.container {
+	flex: 1 0 auto;
+	max-width: 95%;
+	margin: auto;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	overflow: auto;
 }
 
-h2 {
-	font-weight: bold;
+.main-content {
+	display: flex;
+	max-width: 50%;
+	justify-content: center;
+	margin: auto;
+	margin-bottom: 5%;
+	margin-top: 5%;
+	padding-left: 10%;
+	gap: 20px;
 }
 
-strong {
-	font-weight: bold;
+.box-me {
+	padding:50px;
+	background-color: #f4ece6;
+	box-shadow: #99928d -5px 5px 5px;
 }
 
 #image-me {
@@ -69,73 +156,63 @@ strong {
 	font-weight: bold;
 }
 
-a:visited {
-	color: black;
+.intro-paragraph {
+	margin-top: 10%;
+	margin-right: 40%;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+#resume-button {
+	margin: 2px 5px;
+}
+
+#projects-button {
+	margin: 2px 5px;
+}
+
+
+/*
+*****************************
+|	   PROJECTS STYLES      |
+*****************************
+*/
+
+.projects-container {
+	flex: 1 0 auto;
+	max-width: 95%;
+	margin: auto;
+	margin-top: 100px;
+	overflow: auto;
+}
+
+#projects-body {
+	overflow: auto;
+	height: 97%;
+	display: flex;
+	flex-direction: column;
 }
 
 .project-description a:visited {
 	color: #0000EE;
 }
 
-.container {
-	display: grid;
-	grid-template-columns: 1fr .4fr .6fr 1fr;
-	gap: 20px;
-}
-
-header {
-	grid-column: 1/5;
-	grid-row: 1/2;
-	background-color: white;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	left: 0;
-	z-index: 1;
-}
-
-#topname {
-	display: inline-block;
-}
-
-.title {
-	display: inline-block;
-}
-
-.box-me {
-	grid-column:2/3;
-	grid-row:2/4;
-	padding:50px;
-	background-color: #f4ece6;
-	box-shadow: #99928d -5px 5px 5px;
-	position: relative;
-	top: 100px;
-}
-
-span {
-	font-size: 18px;
-}
-
 .box-project {
-	grid-column:1/5;
 	width: 80%;
 	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
 	background-color: #f4ece6;
 	box-shadow: #99928d -5px 5px 5px;
-	position: relative;
-	margin-top: 50px;
-	text-align: left;
-}
-
-#box-projects-title {
-	grid-column:1/5;
-	position: relative;
-	top: 100px;
-	text-align: center;
-	margin-bottom: 40px;
+	overflow: auto;
 }
 
 #projects {
+	text-align: center;
+	margin-bottom: 40px;
 	font-size: 40px;
 }
 
@@ -156,28 +233,14 @@ span {
 	text-align: center;
 }
 
-.buttons {
-    display: flex;
-    gap: 20px;
-}
-
-.introduction {
-	grid-column:3/4;
-	grid-row:2/3;
-	position: relative;
-	top: 100px;
-}
-
-.intro-paragraph {
-	grid-column:3/4;
-	grid-row:3/4;
-	position: relative;
-	top: 100px;
-}
+/*
+*****************************
+|	    FOOTER STYLES       |
+*****************************
+*/
 
 footer {
-	position: relative;
-	grid-column: 4/5;
+	flex-shrink: 0;
 }
 
 .footer-table {
@@ -192,21 +255,4 @@ td {
 
 tr {
 	text-align: center;
-}
-
-#about-body {
-	overflow: hidden;
-	min-height: 100vh;
-	background: linear-gradient(
-		to right,
-		#e6dace 0%,
-		#e6dace 45%,
-		#ffffff 4%,
-		#ffffff 100%
-	);
-}
-
-body {
-	min-height: 100vh;
-	background: #e6dace;
 }
