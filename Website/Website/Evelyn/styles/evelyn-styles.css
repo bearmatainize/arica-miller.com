@@ -1,0 +1,167 @@
+
+* {
+	border: solid rgba(255, 0, 0, 0) 2px;
+	font-family: Poppins, Arial, sans-serif;
+	font-weight: 300;
+}
+
+nav a {
+	padding: 10px;
+	list-style:none;
+	text-decoration:none;
+	color:black;
+}
+
+nav {
+    display: inline-flex;
+    gap: 10px;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    float: right;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+#current-page {
+	color: #7ca2de;
+}
+
+div {
+	padding:10px;
+}
+
+h1 {
+	font-size: 80px;
+	font-weight: 700;
+	margin-bottom: 10px;
+	margin-top: 30px;
+}
+
+h2 {
+	font-weight: bold;
+}
+
+strong {
+	font-weight: bold;
+}
+
+#image-evelyn {
+	border-radius:50% 50% 50% 50% / 50% 50% 50% 50%;
+}
+
+#draw-button {
+	background-color: #8caee6;
+	color: white;
+	border-radius: 20px;
+	padding: 10px 40px;
+	text-decoration: none;
+	margin: auto;
+	font-weight: bold;
+}
+
+a:visited {
+	color: black;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr .4fr .6fr 1fr;
+	gap: 20px;
+}
+
+header {
+	grid-column: 1/5;
+	grid-row: 1/2;
+	background-color: white;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	left: 0;
+	z-index: 1;
+}
+
+#topname {
+	display: inline-block;
+}
+
+.title {
+	display: inline-block;
+}
+
+.box-me {
+	grid-column:2/3;
+	grid-row:2/4;
+	padding:50px;
+	background-color: #b4c5e2;
+	box-shadow: #7d889c -5px 5px 5px;
+	position: relative;
+	top: 100px;
+}
+
+span {
+	font-size: 18px;
+}
+
+.box-project {
+	grid-column:1/5;
+	width: 80%;
+	margin: auto;
+	background-color: #b4c5e2;
+	box-shadow: #7d889c -5px 5px 5px;
+	position: relative;
+	margin-top: 50px;
+	text-align: left;
+}
+
+#box-projects-title {
+	grid-column:1/5;
+	position: relative;
+	top: 100px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#projects {
+	font-size: 40px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.introduction {
+	grid-column:3/4;
+	grid-row:2/3;
+	position: relative;
+	top: 100px;
+}
+
+.intro-paragraph {
+	grid-column:3/4;
+	grid-row:3/4;
+	position: relative;
+	top: 70px;
+}
+
+#about-body {
+	overflow: hidden;
+	min-height: 100vh;
+	background: linear-gradient(
+		to right,
+		#8caee6 0%,
+		#8caee6 45%,
+		#ffffff 4%,
+		#ffffff 100%
+	);
+}
+
+body {
+	min-height: 100vh;
+	background: #8caee6;
+}
+
+.how-to-draw-image {
+	width: 60%;
+	margin: 10px 20% 10px 20%;
+}
